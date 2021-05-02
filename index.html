@@ -18,6 +18,12 @@
         </ul>
     </div>
 
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+
     <!-- Hero section -->
 
     <div class="hero-section">
@@ -103,5 +109,20 @@
         </div>
         <h6>Copyright &copy; 2021 Zuri Training.</h6>
     </div>
+    <script>
+        let navSlide = () => {
+            let burger = document.querySelector('.burger');
+            let nav = document.querySelector('.nav-links');
+            let navLinks = document.querySelectorAll('.nav-links li')
+
+
+            burger.addEventListener('click', () => {
+                //toggle nav 
+                nav.classList.toggle('nav-active');
+            })
+        }
+
+        navSlide();
+    </script>
 </body>
 </html>
